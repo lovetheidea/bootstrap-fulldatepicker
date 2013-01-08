@@ -384,8 +384,7 @@
 		parseFormat: function(format){
 			var separator = format.match(/[.\/\-\s].*?/) || "",
 				parts = format.split(/\W+/) || parts;
-				console.log(separator);
-				console.log(parts);
+
 			if (!parts || parts.length === 0){
 				throw new Error("Invalid date format.");
 			}

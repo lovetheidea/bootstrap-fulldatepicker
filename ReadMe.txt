@@ -1,22 +1,36 @@
-I. File list
-------------
-bootstrap-fulldatepicker.js		
-example.html
 
+1.Description
+Add a bootstrap date picker to multiple field's or to any other element. 
 
-II. Design
-----------
-A. Program design
+2. Edits
+Original code did not handle selecting year's only, multiple events, or custom titles and outputs, this file was edited and functionality was added to handle this.
+Original author : Stefan Petre 2012
+http://www.eyecon.ro/bootstrap-datepicker
+
+3. Error handling
+Problems were faced with event bubbling, calling the plugin directly with a jQuery 'document' selector meant that datepicker() did not get called on multiple fields.
+
+4. File list
+-bootstrap-fulldatepicker.js		
+-example.html
+-css/datepicker.css
+-css/bootstrap.css (v2.1.1)
+
+5. Program design
 
 TO BE USED WITH:
+------------
+*bootstrap.css
+*bootstrap.js
+*jquery.js
+------------
 
-bootstrap.css
-bootstrap.js
-jquery.js
+Call the datepicker via javascript:
+$('.datepicker').datepicker()
 
+formats: dd, d, mm, m, yyyy, yy
+separators: -, /, .
 
-1. Style
-Original code did not handle picking year's, multiple events, or custom outputs on return, this file was edited and functionality was added to handle this.
+For full datepicker methods please refer to:
+http://www.eyecon.ro/bootstrap-datepicker.
 
-2. Error handling
-Problems were faced with event bubbling, calling the plugin with a jQuery document selector meant that the datepicker did not get called. Calling a specfic class, 'yeardate', was used to solve the issue. 
