@@ -1,11 +1,8 @@
-
 1.Description
 Add a bootstrap date picker to multiple field's or to any other element. 
 
 2. Edits
 Original code did not handle selecting year's only, multiple events, or custom titles and outputs, this file was edited and functionality was added to handle this.
-Original author : Stefan Petre 2012
-http://www.eyecon.ro/bootstrap-datepicker
 
 3. Error handling
 Problems were faced with event bubbling, calling the plugin directly with a jQuery 'document' selector meant that datepicker() did not get called on multiple fields.
